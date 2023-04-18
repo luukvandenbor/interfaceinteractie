@@ -38,28 +38,31 @@ Mijn startniveau is: Blauw
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
-  ### Bevinding 1:
+  ### Bevindingen:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
-  #### oplossing:
+  <img src="readme-images/feedback.png" width="375px" alt="Miro Feedback">
+
+  Feedback punten:
+
+  Je zou kunnen kiezen voor een play/mute button zodat er continue muziek loopt van de desbetreffende serie
+
+  De detailpagina's in de stijl aanpassen per game.
+
+  Als je wilt animeren kan je de karakters misschien uit beeld naar recht sliden en weer in beeld sliden met de gekozen animatie
+
+  Je kunt nadenken over easter eggs vanuit de game
+
+  Progressive Disclosure met karakter misschien
+
+  Delays toevoegen voor weergave info
+
+  #### Oplossingen:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
-
-
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
+  NIEUWE SCHETS + UITLEG PLAATSEN
 
 </details>
-
-
 
 
 ## Voortgang/Feedback 2
