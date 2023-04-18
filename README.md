@@ -7,17 +7,13 @@ Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
 
-
-
 ## Jij
 
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Luuk van den Bor
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
-
-
+Mijn startniveau is: Blauw
 
 
 # Je plan
@@ -26,19 +22,15 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/schets.HEIC" width="375px" alt="eerste versie/schets">
 
-
-  ### Je ambitie: 
+  ### Je ambitie:
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
- 
+  - Animatie
+  - Grid gebruik
+  - Misschien klein stukje javascript (als het mogelijk is)
+
 </details>
-
-
 
 
 ## Voortgang/Feedback 1
@@ -74,7 +66,7 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
-  
+
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
@@ -103,7 +95,7 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
-  
+
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
@@ -137,7 +129,7 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
 
 
-  ### Dit ging goed/Heb ik geleerd: 
+  ### Dit ging goed/Heb ik geleerd:
   Korte omschrijving met plaatje(s)
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
