@@ -41,7 +41,7 @@ Mijn startniveau is: Blauw
   ### Bevindingen:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
-  <img src="readme-images/feedback.png" width="375px" alt="Miro Feedback">
+  <img src="readme-images/feedback.png" width="375px" alt="miro feedback">
 
   Feedback punten:
 
