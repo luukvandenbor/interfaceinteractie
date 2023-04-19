@@ -60,7 +60,17 @@ Mijn startniveau is: Blauw
   #### Oplossingen:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
-  NIEUWE SCHETS + UITLEG PLAATSEN
+  <img src="readme-images/vervolgschets.png" width="375px" alt="nieuwe schets met interacties">
+
+  Op het eerste scherm heb ik de overview weergegeven met de hover animatie om de aparte games te tonen.
+
+  Op het tweede scherm zie je per game het overzicht waarbij de elementen inschuiven op het moment dat je op de background klikt.
+
+  Op het derde scherm heb ik een animatie uitgelicht van het karakter waarbij je met een dubbelklik (of misschien 1 klik) het element een sprong laat maken of misschien een woosh (even kijken wat haalbaar is).
+
+  Op het laatste scherm heb ik uitgelicht dat met een button je de muziek van de game kan afspelen.
+
+  Als ik nog tijd over heb wil ik nog een easter egg toevoegen. Eerst maar focussen op bovenstaande punten.
 
 </details>
 
