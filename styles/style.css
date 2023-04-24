@@ -1,17 +1,5 @@
-/*************/
-/* CSS RESET */
-/*************/
-/* naar een idee van Jen Simmons */
-*, *::after, *::before {
-  box-sizing:border-box;
-}
-
 body {
   margin:0;
-}
-
-button:not([disabled]) {
-  cursor:pointer;
 }
 
 
@@ -40,6 +28,7 @@ p {
   text-align: center;
 }
 
+/*List*/
 ol {
   height:100vh;
 	margin:0;
@@ -56,12 +45,18 @@ li {
 	transition:1s;
 }
 
-li:hover {
+li:hover,
+li:focus-within {
 	flex-basis:80%;
 }
 
+/*Assasins Creed Blackflag - 2013*/
 li:nth-of-type(1) {
   background-image:url("../images/blackflag_background.png");
+}
+
+li:nth-of-type(1) h1 {
+  color: var(--color-main);
 }
 
 li:nth-of-type(1) a {
@@ -70,38 +65,172 @@ li:nth-of-type(1) a {
   font-size: 20px;
 }
 
+li:nth-of-type(1) img {
+  width: 0px;
+  opacity: 0;
+}
+
+li:nth-of-type(1):hover img {
+  width: 300px;
+  animation-name:opacity;
+  animation-duration:3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+}
+}
+
+/*Assasins Creed Unity - 2014*/
 li:nth-of-type(2) {
   background-image:url("../images/unity_background.png");
+}
+
+li:nth-of-type(2) h1 {
+  color: var(--color-main);
 }
 
 li:nth-of-type(2) a {
   text-decoration: none;
   color: var(--color-main);
+  font-size: 20px;
 }
 
+li:nth-of-type(2) img {
+  width: 0px;
+  opacity: 0;
+}
+
+li:nth-of-type(2):hover img {
+  width: 450px;
+  animation-name:opacity;
+  animation-duration:3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Assasins Creed Origins - 2017*/
 li:nth-of-type(3) {
   background-image:url("../images/origins_background.png");
+}
+
+li:nth-of-type(3) h1 {
+  color: var(--color-main);
 }
 
 li:nth-of-type(3) a {
   text-decoration: none;
   color: var(--color-main);
+  font-size: 20px;
 }
 
+li:nth-of-type(3) img {
+  width: 0px;
+  opacity: 0;
+}
+
+li:nth-of-type(3):hover img {
+  width: 350px;
+  animation-name:opacity;
+  animation-duration:3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Assasins Creed Odyssey - 2018*/
 li:nth-of-type(4) {
   background-image:url("../images/odyssey_background.png");
+}
+
+li:nth-of-type(4) h1 {
+  color: var(--color-main);
 }
 
 li:nth-of-type(4) a {
   text-decoration: none;
   color: var(--color-main);
+  font-size: 20px;
 }
 
+li:nth-of-type(4) img {
+  width: 0px;
+  opacity: 0;
+}
+
+li:nth-of-type(4):hover img {
+  width: 350px;
+  animation-name:opacity;
+  animation-duration:3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+}
+}
+
+/*Assasins Creed Valhalla - 2020*/
 li:nth-of-type(5) {
   background-image:url("../images/valhalla_background.png");
+}
+
+li:nth-of-type(5) h1 {
+  color: var(--color-main);
 }
 
 li:nth-of-type(5) a {
   text-decoration: none;
   color: var(--color-main);
+  font-size: 20px;
+}
+
+li:nth-of-type(5) img {
+  width: 0px;
+  opacity: 0;
+}
+
+li:nth-of-type(5):hover img {
+  width: 350px;
+  animation-name:opacity;
+  animation-duration:3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+}
 }
