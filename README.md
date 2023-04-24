@@ -57,7 +57,7 @@ Mijn startniveau is: Blauw
 
   Delays toevoegen voor weergave info
 
-  #### Oplossingen:
+  #### Oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
   <img src="readme-images/vervolgschets.png" width="375px" alt="nieuwe schets met interacties">
@@ -80,28 +80,34 @@ Mijn startniveau is: Blauw
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
-  ### Bevinding 1:
+  <img src="readme-images/feedback2_1.png" width="375px" alt="miro feedback">
+
+  <img src="readme-images/feedback2_2.png" width="375px" alt="miro feedback">
+
+  ### Bevindingen:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
-  #### oplossing:
+  Verzorging:
+  - Als je het scherm niet te veel verkleint is het goed responsive. Bij meer dan 50% vallen delen buiten het veld en zijn de characters te groot.
+
+Semantische code
+  - Alt text ontbreekt nog.
+
+Nette code
+  - In  CSS root staat een kleur.
+  - Je zou meer witruimte kunnen gebruiken.
+  - Uitleg ontbreekt nog.
+  - Veel gebruik van PX, geen relatieve units.
+  - Als je 1 x de keyframe van opacity hebt aangemaakt, moet je hem dan nog herhalen?
+  - Afmetingen foto's en text grootte wordt steeds herhaald, deze kan in 1x worden geschreven.
+  - Nog geen bronnen opgenomen, maar misschien NVT.
+
+  #### Oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
-
-
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
+  aaa
 
 </details>
-
-
 
 
 ## Voortgang/Feedback 3
