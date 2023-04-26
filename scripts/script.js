@@ -1,14 +1,28 @@
 // JavaScript Document
-console.log("Howdy!");
+console.log("Pepsi!");
 
-//Bron: Javascript toegepast vanuit vorig jaar voor thema muziek. Tom gaf aan dat ...
+//Bron: Javascript toegepast vanuit vorig jaar voor thema muziek.
+var blackflag = document.querySelector("main ol li:nth-of-type(1) div");
+var unity = document.querySelector("main ol li:nth-of-type(2) div");
+var origins = document.querySelector("main ol li:nth-of-type(3) div");
+var odyssey = document.querySelector("main ol li:nth-of-type(4) div");
+var valhalla = document.querySelector("main ol li:nth-of-type(5) div");
 
-//slide 1
-const blackflag = document.querySelector("main ol li:nth-of-type(1) div");
-const musicBlackFlag = document.querySelector("main ol li:nth-of-type(1) div audio")
+var musicBlackFlag = document.querySelector("main ol li:nth-of-type(1) div audio");
+var musicUnity = document.querySelector("main ol li:nth-of-type(2) div audio");
+var musicOrigins = document.querySelector("main ol li:nth-of-type(3) div audio");
+var musicOdyssey = document.querySelector("main ol li:nth-of-type(4) div audio");
+var musicValhalla = document.querySelector("main ol li:nth-of-type(5) div audio");
 
-let isPlayingBlackFlag = false;
 
+var isPlayingBlackFlag = false;
+var isPlayingUnity = false;
+var isPlayingOrigins = false;
+var isPlayingOdyssey = false;
+var isPlayingValhalla = false;
+
+
+//Slide 1 - Blackflag
 blackflag.addEventListener("click", () => {
   if (isPlayingBlackFlag) {
         musicBlackFlag.pause()
@@ -19,12 +33,7 @@ blackflag.addEventListener("click", () => {
     }
 })
 
-//slide 2
-const unity = document.querySelector("main ol li:nth-of-type(2) div");
-const musicUnity = document.querySelector("main ol li:nth-of-type(2) div audio")
-
-let isPlayingUnity = false;
-
+//Slide 2 - Unity
 unity.addEventListener("click", () => {
   if (isPlayingUnity) {
         musicUnity.pause()
@@ -35,12 +44,7 @@ unity.addEventListener("click", () => {
     }
 })
 
-//slide 3
-const origins = document.querySelector("main ol li:nth-of-type(3) div");
-const musicOrigins = document.querySelector("main ol li:nth-of-type(3) div audio")
-
-let isPlayingOrigins = false;
-
+//Slide 3 - Origins
 origins.addEventListener("click", () => {
   if (isPlayingOrigins) {
         musicOrigins.pause()
@@ -51,12 +55,7 @@ origins.addEventListener("click", () => {
     }
 })
 
-//slide 4
-const odyssey = document.querySelector("main ol li:nth-of-type(4) div");
-const musicOdyssey = document.querySelector("main ol li:nth-of-type(4) div audio")
-
-let isPlayingOdyssey = false;
-
+//Slide 4 - Odyssey
 odyssey.addEventListener("click", () => {
   if (isPlayingOdyssey) {
         musicOdyssey.pause()
@@ -67,12 +66,7 @@ odyssey.addEventListener("click", () => {
     }
 })
 
-//slide 5
-const valhalla = document.querySelector("main ol li:nth-of-type(5) div");
-const musicValhalla = document.querySelector("main ol li:nth-of-type(5) div audio")
-
-let isPlayingValhalla = false;
-
+//Slide 5 - Valhalla
 valhalla.addEventListener("click", () => {
   if (isPlayingValhalla) {
         musicValhalla.pause()

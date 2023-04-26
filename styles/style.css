@@ -1,4 +1,6 @@
-/* Ideeen voor easter eggs:
+/* Ideeen (voor easter eggs):
+Paper.png als quest gebruiken op hover.
+
 Op elementen in background image klikken bijvoorbeeld
 op de piramides in origins en dan iets activeren */
 
@@ -48,15 +50,36 @@ h2 {
   font-family: 'assasins', sans-serif;
   color: var(--color-white);
   margin-top: -170px;
-  z-index: 1;
   text-shadow: 1px 1px 6px #000;
   font-size: 52px;
   position: relative;
 }
 
+h3 {
+  font-size: 28px;
+  position: relative;
+  text-align: center;
+  font-family: 'assasins', sans-serif;
+  color: var(--color-darkred);
+  margin-top: -650px;
+}
+
+p {
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  font-family: 'assasins', sans-serif;
+  color: var(--color-darkred);
+}
+
 /*List*/
+main {
+  width:100%;
+  height:100%;
+}
 ol {
   height: 100%;
+  width:100%;
 	margin:0;
 	padding:0;
 	list-style:none;
@@ -70,7 +93,7 @@ li {
 	flex-grow:1;
 	flex-basis:0%;
 	transition:1s;
-  /* box shadow bron: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image */
+  /*Bron: box shadow: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image */
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
 
@@ -78,9 +101,7 @@ li img {
   height: 100vh;
   display: block;
   margin: 0 auto;
-  transform: translateY(50px);
   position: relative;
-  z-index: 0;
 }
 
 li:hover,
@@ -92,12 +113,12 @@ li:focus-within {
 a {
   position: absolute;
   font-family: 'assasins', sans-serif;
-  font-size: 25px;
+  font-size: 25px; /* BAH px --> delen door 16 */
   text-decoration: none;
   color: var(--color-white);
 }
 
-/*Div Transition*/
+/*Div Transition - Character + Title View*/
 div {
   width: 0px;
   opacity: 0;
@@ -118,6 +139,18 @@ li:hover div {
   100% {
     opacity: 1;
   }
+}
+
+/*Section Styling - Quest View*/
+section {
+  width: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+li div:hover + section {
+  width: auto;
+  opacity: 1;
 }
 
 /*Assasins Creed Blackflag - 2013*/
