@@ -105,7 +105,12 @@ Nette code
   #### Oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
-  aaa
+  - Alt text toegevoegd
+  - Custom properties toegevoegd voor de kleuren settings
+  - Alle elementen met px veranderd naar em
+  - Alle algemene styling per 1 element toegepast en herhaling eruit gehaald
+  - Afbeelding groottes aangepast
+  - Bronnen in styling notities gezet
 
 </details>
 
@@ -115,28 +120,27 @@ Nette code
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
-  ### Bevinding 1:
+  <img src="readme-images/feedback3.png" width="375px" alt="miro feedback">
+
+  ### Bevindingen:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
-  #### oplossing:
+  - Concept en details passen nog niet goed bij elkaar
+  - Styling kan strakker
+  - Code bij elkaar positioneren
+  - Technische problemen: Witruimte ontstaat aan zijkant
+  - Meer animaties toevoegen
+
+  #### Oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
-
-
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
+  - Concept strakker uitgewerkt. Nu een quest game ervan gemaakt dat je per game een verstopt element moet zoeken en daar op moet klikken zodat er een animatie activeert.
+  - Schaduwen toegevoegd, overgangen smoother laten lopen (Sanne), tekst styling van de quest passend gemaakt. Concept voelt nu als een geheel
+  - Alle code semantisch correct neergezet (volgens mij geheel kloppend), code bij elkaar gepositioneerd en duidelijk titels gegeven
+  - Witruimte probleem opgelost door Sanne. Het probleem was dat de afbeeldingen in de div uit de div staken als die opx breed was.
+  - Animaties per game toegevoegd met elementen (krokodil, vogel, kat, octopus en pepsiflesje (easter egg)) die te maken hebben met de game.
 
 </details>
-
-
 
 
 ## Reflectie
@@ -170,8 +174,9 @@ Nette code
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Bron voor box shadow: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image
+2. Bron voor transform - translate3d (smoother verloop animatie vogel): https://www.kirupa.com/html5/animating_movement_smoothly_using_css.htm
+3. Bron voor de laatste links, dus click + toggle: Tom van den Berg (Student)
+4. Bron voor het witruimte probleem: Sanne 't Hooft
 
 </details>
