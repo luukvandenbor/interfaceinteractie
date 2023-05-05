@@ -1,5 +1,5 @@
 // JavaScript Document
-console.log("Pepsi!");
+console.log("PepsiMax!");
 
 //Bron: Javascript toegepast vanuit vorig jaar voor thema muziek.
 var blackflag = document.querySelector("main ol li:nth-of-type(1) div");

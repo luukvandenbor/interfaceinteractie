@@ -1,12 +1,6 @@
-/* Ideeen (voor easter eggs):
-Paper.png als quest gebruiken op hover.
-
-Op elementen in background image klikken bijvoorbeeld
-op de piramides in origins en dan iets activeren */
-
-/*************/
+/**************/
 /* CSS RESET */
-/*************/
+/************/
 @font-face {
   font-family: 'assasins';
   src: url('../fonts/CastoroTitling-Regular.woff') format('woff');
@@ -29,12 +23,12 @@ body {
 
 
 
-/*********************/
+/**********************/
 /* CUSTOM PROPERTIES */
-/*********************/
+/********************/
 :root {
   --color-white: rgb(255 255 255);
-  --color-black: rgb(255 0 0);
+  --color-black: rgb(0 0 0);
   --color-darkred: rgb(139 0 0);
 }
 
@@ -42,44 +36,46 @@ body {
 
 
 
-/********************/
+/*********************/
 /* ALGEMENE STYLING */
-/********************/
+/*******************/
 h2 {
+  position: relative;
   text-align: center;
   font-family: 'assasins', sans-serif;
   color: var(--color-white);
-  margin-top: -170px;
-  text-shadow: 1px 1px 6px #000;
-  font-size: 52px;
-  position: relative;
+  font-size: 3.25em;
+  text-shadow: 1px 1px 6px var(--color-black);
 }
 
 h3 {
-  font-size: 28px;
   position: relative;
   text-align: center;
   font-family: 'assasins', sans-serif;
   color: var(--color-darkred);
-  margin-top: -650px;
+  font-size: 1.75em;
 }
 
 p {
-  font-size: 18px;
   position: relative;
   text-align: center;
   font-family: 'assasins', sans-serif;
   color: var(--color-darkred);
+  font-size: 1.12em;
+}
+
+/* Muis handje */
+button:hover {
+  cursor: pointer;
 }
 
 /*List*/
 main {
-  width:100%;
-  height:100%;
+  height: 100%;
 }
+
 ol {
   height: 100%;
-  width:100%;
 	margin:0;
 	padding:0;
 	list-style:none;
@@ -88,20 +84,24 @@ ol {
 
 li {
   position: relative;
+
+  /* kind van de ul */
+  flex-grow:1;
+	flex-basis:0%;
+
+  /* parent van de a, div en section */
   display:grid;
   place-items:center;
-	flex-grow:1;
-	flex-basis:0%;
+
 	transition:1s;
   /*Bron: box shadow: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image */
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-}
 
-li img {
-  height: 100vh;
-  display: block;
-  margin: 0 auto;
-  position: relative;
+  /* wat uitsteekt is niet te zien */
+  overflow:hidden;
+  /* het probleem was dat de afbeeldingen in de div uit de div staken als die opx breed was */
+  /* ze staken dan ook uit de li */
+  /* door te zeggen dat wat uit de li steekt niet zichtbaar is, is dat geen probleem meer */
 }
 
 li:hover,
@@ -109,80 +109,444 @@ li:focus-within {
 	flex-basis:80%;
 }
 
-/*Link (Year)*/
+li h2 span {
+  /* elke span op een nieuwe regel */
+  display: block;
+}
+
+
+
+
+
+/**************************************/
+/* ASSASINS CREED - BLACKFLAG - 2013 */
+/************************************/
+li:nth-of-type(1) {
+  background-image:url("../images/blackflag_background.png");
+  /* de achtergrond bedekt de hele li */
+  background-size:cover;
+  /* de achtergrond staat in het midden van de li */
+  background-position:center;
+  /* de randen van de background worden zo afgesneden als dat nodig is */
+}
+
+/* Crocodile */
+li:nth-of-type(1) > img {
+  position: absolute;
+  width: 10em;
+  right: 11.6em;
+  bottom: 13.6em;
+  display: none;
+  transition: 1s;
+}
+
+/* Button */
+li:nth-of-type(1) > button {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  right: 23.7em;
+  top: 10.7em;
+  background-color: red; /* Maak transparent */
+  border: none;
+}
+
+/* Crocodile Animatie + Button (Lukte niet zonder !important)*/
+.showCrocodile {
+  display: block !important;
+  animation-name: swimming;
+  animation-duration: 4s;
+}
+
+@keyframes swimming {
+  0% {
+    right: 11.6em;
+    bottom: 13.6em;
+  }
+
+  20% {
+    right: 11.6em;
+    bottom: 11.6em;
+    animation-timing-function: ease-in;
+  }
+
+  40% {
+    right: 14em;
+    bottom: 11.6em;
+    animation-timing-function: ease-out;
+  }
+
+  60% {
+    right: 18em;
+    bottom: 14em;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    right: 24em;
+    bottom: 14em;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+
+
+
+/**********************************/
+/* ASSASINS CREED - UNITY - 2014 */
+/********************************/
+li:nth-of-type(2) {
+  background-image:url("../images/unity_background.png");
+  background-size:cover;
+  background-position:center;
+}
+
+/* Eagle */
+li:nth-of-type(2) > img {
+  position: absolute;
+  width: 10em;
+  left: 3em;
+  top: 0.5em;
+  display: none;
+  transition: 1s;
+}
+
+/* Button */
+li:nth-of-type(2) > button {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  left: 24.2em;
+  bottom: 8em;
+  background-color: red; /* Maak transparent */
+  border: none;
+}
+
+/* Eagle Animatie + Button (Lukte niet zonder !important)*/
+.showEagle {
+  display: block !important;
+  animation-name: fly;
+  animation-duration: 5s;
+}
+
+/* Bron voor transform - translate3d (smoother): https://www.kirupa.com/html5/animating_movement_smoothly_using_css.htm */
+@keyframes fly {
+  0% {
+    left: 3em;
+    top: 0.5em;
+    transform: translate3d(50px, 40px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    left: 36em;
+    top: 3em;
+    transform: translate3d(50px, 50px, 0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    left: 76em;
+    top: 0.5em;
+    transform: translate3d(50px, 40px, 0px);
+  }
+}
+
+
+
+
+
+/************************************/
+/* ASSASINS CREED - ORIGINS - 2017 */
+/**********************************/
+li:nth-of-type(3) {
+  background-image:url("../images/origins_background.png");
+  background-size:cover;
+  background-position:center;
+  position: relative;
+}
+
+/* Cat */
+li:nth-of-type(3) > img {
+  position: absolute;
+  width: 6em;
+  right: 10em;
+  top: 13.6em;
+  display: none;
+  transition: 1s;
+}
+
+/* Hyena Button */
+li:nth-of-type(3) > button {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  right: 23.2em;
+  bottom: 8em;
+  background-color: transparent;
+  border: none;
+}
+
+/* Cat Animatie + Button (Lukte niet zonder !important)*/
+.showCat {
+  display: block !important;
+  animation-name: spinning;
+  animation-duration: 4s;
+  animation-timing-function:ease-in, ease-in-out, ease-out;
+}
+
+/* Opdracht uit de les */
+@keyframes spinning {
+  0% {
+    transform:perspective(2em) rotate3d(1, 1, 0, 0turn);
+  }
+  100% {
+    transform:perspective(2em) rotate3d(1, 1, 0, 10turn);
+  }
+}
+
+
+
+
+
+/************************************/
+/* ASSASINS CREED - ODYSSEY - 2018 */
+/**********************************/
+li:nth-of-type(4) {
+  background-image:url("../images/odyssey_background.png");
+  background-size:cover;
+  background-position:center;
+}
+
+/* Octopus */
+li:nth-of-type(4) > img {
+  position: absolute;
+  width: 15em;
+  right: 11.6em;
+  bottom: 13.6em;
+  display: none;
+  transition: 1s;
+}
+
+/* Button */
+li:nth-of-type(4) > button {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  left: 2em;
+  top: 10em;
+  background-color: red; /* Maak transparent */
+  border: none;
+}
+
+/* Octopus Animatie + Button (Lukte niet zonder !important)*/
+.showOctopus {
+  display: block !important;
+  animation-name: splash;
+  animation-duration: 5s;
+}
+
+@keyframes splash {
+  0% {
+    width: 10%;
+  }
+
+  20% {
+    width: 20%;
+  }
+
+  40% {
+    width: 10%;
+  }
+
+  60% {
+    width: 20%;
+  }
+
+  100% {
+    width: 200%;
+  }
+
+}
+
+
+
+
+
+/*************************************/
+/* ASSASINS CREED - VALHALLA - 2020 */
+/***********************************/
+li:nth-of-type(5) {
+  background-image:url("../images/valhalla_background.png");
+  background-size:cover;
+  background-position:center;
+}
+
+/* PepsiMax */
+li:nth-of-type(5) > img {
+  position: absolute;
+  width: 8em;
+  right: 11.6em;
+  top: 13.6em;
+  display: none;
+  transition: 1s;
+}
+
+/* Button */
+li:nth-of-type(5) > button {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  right: 23.2em;
+  bottom: 8em;
+  background-color: red; /* Maak transparent */
+  border: none;
+}
+
+/* PepsiMax Animatie + Button (Lukte niet zonder !important)*/
+.showPepsimax {
+  display: block !important;
+}
+
+
+
+
+
+/**********************/
+/*LINK STYLING (YEAR)*/
+/********************/
 a {
   position: absolute;
   font-family: 'assasins', sans-serif;
-  font-size: 25px; /* BAH px --> delen door 16 */
+  font-size: 1.56em;
   text-decoration: none;
   color: var(--color-white);
 }
 
+
+
+
+
+/*****************************************/
 /*Div Transition - Character + Title View*/
-div {
-  width: 0px;
-  opacity: 0;
-}
-
-li:hover div {
-  width: auto;
-  animation-name:opacity;
-  animation-duration:3s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*Section Styling - Quest View*/
-section {
-  width: 0;
-  opacity: 0;
+/*****************************************/
+li > div {
+  /* de div staat absolute in de li */
+  /* de div staat in het midden van de li - omdat de li place-items:center; heeft */
   position: absolute;
+  /* dan steekt wat niet past uit de li */
+  /* dat wordt afgesneden - omdat de li overflow:hidden; heeft */
+
+  /* de div is een grid */
+  /* 1 kolom en 1 row */
+  /* zowel de h2 en de img staan in die ene grid-cel */
+  /* dat staat bij de h2 en img */
+  display:grid;
+  /* beetje padding in de div */
+  padding:2em;
+
+  /* standaard klein en doorzichtig */
+  scale:0;
+  opacity: 0;
+
+  /* in .5s van hover terug naar ontzichtbaar */
+  transition-duration: .5s;
+}
+
+li:hover > div {
+  /* normale maat en zichtbaar */
+  scale:1;
+  opacity:1;
+
+  /* in 1s van ontzichtbaar naar zichtbaar */
+  transition-duration: 1s;
+  /* wel .25s wachten - zodat de li al een beetje kan groeien */
+  transition-delay: .25s;
+}
+
+li > div h2 {
+  /* de h2 staat in de eerste cel van het grid */
+  grid-column-start:1;
+  grid-row-start: 1;
+
+  /* in het midden aan de onderkant */
+  justify-self: center;
+  align-self: end;
+}
+
+li > div img {
+  /* de img staat ook in de eerste cel van het grid */
+  grid-column-start:1;
+  grid-row-start:1;
+  /* in het midden in het midden */
+  justify-self: center;
+  align-self: center;
+  display: block;
+  height: 90vh;
+  width:auto;
+}
+
+
+
+
+
+/******************************/
+/*Section Styling + Quest View*/
+/******************************/
+section {
+  position: absolute;
+  /* de secion heeft dezelfde verhouding van de achtergrond-image */
+  aspect-ratio: 756/1144;
+
+  padding:4em;
+
+  /* standaard klein en doorzichtig */
+  scale:0;
+  opacity: 0;
+
+  background-image: url(../images/paper.png);
+  background-size: cover;
+  background-position: center;
+
+  /* in .5s van hover terug naar ontzichtbaar */
+  transition-duration: .5s;
+
+  /* shadow */
+  filter:drop-shadow(.25em .25em .75em var(--color-black));
+
+  /* zodat je over de div blijft hoveren als de section zichtbaar is */
+  pointer-events: none;
+  /* niet nodig als je het verschijnen van de section */
 }
 
 li div:hover + section {
-  width: auto;
-  opacity: 1;
+  /* normale maat en zichtbaar */
+  scale:1;
+  opacity:1;
+
+  /* in 1s van ontzichtbaar naar zichtbaar */
+  transition-duration: 1s;
+  /* wel .25s wachten - zodat de li al een beetje kan groeien */
+  transition-delay: .25s;
 }
 
-/*Assasins Creed Blackflag - 2013*/
-li:nth-of-type(1) {
-  background-image:url("../images/blackflag_background.png");
+li section img {
+  /* is nu een background-image van de section */
 }
 
-/*Assasins Creed Unity - 2014*/
-li:nth-of-type(2) {
-  background-image:url("../images/unity_background.png");
+li section p span {
+  /* elke span op een nieuwe regel */
+  display: block;
 }
 
-/*Assasins Creed Origins - 2017*/
-li:nth-of-type(3) {
-  background-image:url("../images/origins_background.png");
+li section h3 span {
+  display: block;
 }
 
-li:nth-of-type(3) button {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  right: 200px;
-  bottom: 100px;
-  background-color: red;
-}
-
-/*Assasins Creed Odyssey - 2018*/
-li:nth-of-type(4) {
-  background-image:url("../images/odyssey_background.png");
-}
-
-/*Assasins Creed Valhalla - 2020*/
-li:nth-of-type(5) {
-  background-image:url("../images/valhalla_background.png");
+li section hr {
+  width:1em;
+  height:.1em;
+  border:none;
+  background: var(--color-darkred);
 }
