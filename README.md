@@ -80,9 +80,9 @@ Mijn startniveau is: Blauw
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
-  <img src="readme-images/feedback2_1.png" width="375px" alt="miro feedback">
+  <img src="readme-images/feedback2_1.png" width="375px" alt="feedback formulier 1">
 
-  <img src="readme-images/feedback2_2.png" width="375px" alt="miro feedback">
+  <img src="readme-images/feedback2_2.png" width="375px" alt="feedback formulier 2">
 
   ### Bevindingen:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
@@ -120,7 +120,7 @@ Nette code
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
-  <img src="readme-images/feedback3.png" width="375px" alt="miro feedback">
+  <img src="readme-images/feedback3.png" width="375px" alt="feedback formulier">
 
   ### Bevindingen:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
@@ -149,22 +149,32 @@ Nette code
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
-
+  <img src="readme-images/overview.png" width="375px" alt="final ontwerp overzicht">
+  <img src="readme-images/blackflagoverview.png" width="375px" alt="final ontwerp blackflag">
+  <img src="readme-images/unityoverview.png" width="375px" alt="final ontwerp unity">
+  <img src="readme-images/originsoverview.png" width="375px" alt="final ontwerp origins">
+  <img src="readme-images/odysseyoverview.png" width="375px" alt="final ontwerp odyssey">
+  <img src="readme-images/valhallaoverview.png" width="375px" alt="final ontwerp valhalla">
 
   ### Dit ging goed/Heb ik geleerd:
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/animationproperty.png" width="375px" alt="top">
 
+  Na het vele tweaken met positionering en styling merkte ik dat het coderen me alweer wat beter af begon te gaan. Het werken met animaties ging nu vrij soepel in tegenstelling tot vorig jaar. Daarnaast is het stylen van het gehele concept me ook veel beter af gegaan en is het nu veel meer 1 geheel. Door de zelfverzekerdheid die meer omhoog is gekomen gedurende het proces, kon ik veel sneller aanpassingen doen en elementen veranderen op de momenten dat dat nodig was. Een goed voorbeeld van wat goed ging, is dat ik eerst alle animatie properties onder elkaar staan en die heb ik uiteindelijk samengevoegd in de animation property, met de gekozen values erachter aan. Dit werkt veel efficiënter en is voor mij daarom ook erg waardevol.
+
+  Animaties toevoegen en styling
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/divsectionstyling.png" width="375px" alt="bummer">
+
+  Hetgeen waar ik de meeste moeite mee had, was het positioneren van de elementen. Voornamelijk de div's en section's. Hierdoor is uiteindelijk ook het witruimte probleem ontstaan wat uiteindelijk met de hulp van Sanne is opgelost. Verder wilde ik misschien nog een soort lock toevoegen zodat niet bij elke hover je veranderd van weergave positie. Dit zou zorgen voor meer standvastigheid en een verbetering kunnen zijn van het ontwerp.
+
+  Over het algemeen ben ik tevreden met het resultaat. Het programmeren ging me een stuk beter af dan vorig jaar en bepaalde connecties tussen de elementen kon ik veel sneller vanuit mezelf leggen. Programmeren is zeker niet mijn eerste keus als het gaat om CMD, maar ik ben blij dat ik met dit project zelfverzekerder ben geworden in het vak.
+
 </details>
-
-
 
 
 ## Bronnenlijst
@@ -176,7 +186,8 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. Bron voor box shadow: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image
 2. Bron voor transform - translate3d (smoother verloop animatie vogel): https://www.kirupa.com/html5/animating_movement_smoothly_using_css.htm
-3. Bron voor de laatste links, dus click + toggle: Tom van den Berg (Student)
-4. Bron voor het witruimte probleem: Sanne 't Hooft
+3. Bron voor draai animatie kat: http://jsfiddle.net/NfX56/3/
+4. Bron voor de laatste Javascript connecties, dus click + toggle: Tom van den Berg (Student)
+5. Bron voor het witruimte probleem: Sanne 't Hooft
 
 </details>

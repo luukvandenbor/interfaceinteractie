@@ -2,19 +2,19 @@
 /* CSS RESET */
 /************/
 @font-face {
-  font-family: 'assasins';
-  src: url('../fonts/CastoroTitling-Regular.woff') format('woff');
+  font-family: "assasins";
+  src: url("../fonts/CastoroTitling-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
-  margin:0;
+  margin: 0;
   overflow: hidden;
   height: 100vh;
 }
@@ -42,26 +42,26 @@ body {
 h2 {
   position: relative;
   text-align: center;
-  font-family: 'assasins', sans-serif;
-  color: var(--color-white);
+  font-family: "assasins", sans-serif;
   font-size: 3.25em;
+  color: var(--color-white);
   text-shadow: 1px 1px 6px var(--color-black);
 }
 
 h3 {
   position: relative;
   text-align: center;
-  font-family: 'assasins', sans-serif;
-  color: var(--color-darkred);
+  font-family: "assasins", sans-serif;
   font-size: 1.75em;
+  color: var(--color-darkred);
 }
 
 p {
   position: relative;
   text-align: center;
-  font-family: 'assasins', sans-serif;
-  color: var(--color-darkred);
+  font-family: "assasins", sans-serif;
   font-size: 1.12em;
+  color: var(--color-darkred);
 }
 
 /* Muis handje */
@@ -76,29 +76,29 @@ main {
 
 ol {
   height: 100%;
-	margin:0;
-	padding:0;
-	list-style:none;
-	display:flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 li {
   position: relative;
 
   /* kind van de ul */
-  flex-grow:1;
-	flex-basis:0%;
+  flex-grow: 1;
+  flex-basis: 0%;
 
   /* parent van de a, div en section */
-  display:grid;
-  place-items:center;
+  display: grid;
+  place-items: center;
 
-	transition:1s;
+  transition: 1s;
   /*Bron: box shadow: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image */
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 
   /* wat uitsteekt is niet te zien */
-  overflow:hidden;
+  overflow: hidden;
   /* het probleem was dat de afbeeldingen in de div uit de div staken als die opx breed was */
   /* ze staken dan ook uit de li */
   /* door te zeggen dat wat uit de li steekt niet zichtbaar is, is dat geen probleem meer */
@@ -106,7 +106,7 @@ li {
 
 li:hover,
 li:focus-within {
-	flex-basis:80%;
+  flex-basis: 80%;
 }
 
 li h2 span {
@@ -122,11 +122,11 @@ li h2 span {
 /* ASSASINS CREED - BLACKFLAG - 2013 */
 /************************************/
 li:nth-of-type(1) {
-  background-image:url("../images/blackflag_background.png");
+  background-image: url("../images/blackflag_background.png");
   /* de achtergrond bedekt de hele li */
-  background-size:cover;
+  background-size: cover;
   /* de achtergrond staat in het midden van de li */
-  background-position:center;
+  background-position: center;
   /* de randen van de background worden zo afgesneden als dat nodig is */
 }
 
@@ -140,22 +140,21 @@ li:nth-of-type(1) > img {
   transition: 1s;
 }
 
-/* Button */
+/* Flag Button */
 li:nth-of-type(1) > button {
   position: absolute;
   height: 2em;
   width: 2em;
   right: 23.7em;
   top: 10.7em;
-  background-color: red; /* Maak transparent */
+  background-color: transparent;
   border: none;
 }
 
 /* Crocodile Animatie + Button (Lukte niet zonder !important)*/
 .showCrocodile {
   display: block !important;
-  animation-name: swimming;
-  animation-duration: 4s;
+  animation: swimming 6s infinite;
 }
 
 @keyframes swimming {
@@ -181,10 +180,19 @@ li:nth-of-type(1) > button {
     bottom: 14em;
     animation-timing-function: ease-in;
   }
-
-  100% {
+  80% {
     right: 24em;
     bottom: 14em;
+    animation-timing-function: ease-out;
+  }
+  90% {
+    right: 20em;
+    bottom: 13.6em;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    right: 11.6em;
+    bottom: 13.6em;
     animation-timing-function: ease-out;
   }
 }
@@ -197,9 +205,9 @@ li:nth-of-type(1) > button {
 /* ASSASINS CREED - UNITY - 2014 */
 /********************************/
 li:nth-of-type(2) {
-  background-image:url("../images/unity_background.png");
-  background-size:cover;
-  background-position:center;
+  background-image: url("../images/unity_background.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Eagle */
@@ -212,22 +220,21 @@ li:nth-of-type(2) > img {
   transition: 1s;
 }
 
-/* Button */
+/* Person Button */
 li:nth-of-type(2) > button {
   position: absolute;
   height: 2em;
   width: 2em;
   left: 24.2em;
   bottom: 8em;
-  background-color: red; /* Maak transparent */
+  background-color: transparent;
   border: none;
 }
 
 /* Eagle Animatie + Button (Lukte niet zonder !important)*/
 .showEagle {
   display: block !important;
-  animation-name: fly;
-  animation-duration: 5s;
+  animation: fly 5s;
 }
 
 /* Bron voor transform - translate3d (smoother): https://www.kirupa.com/html5/animating_movement_smoothly_using_css.htm */
@@ -261,9 +268,9 @@ li:nth-of-type(2) > button {
 /* ASSASINS CREED - ORIGINS - 2017 */
 /**********************************/
 li:nth-of-type(3) {
-  background-image:url("../images/origins_background.png");
-  background-size:cover;
-  background-position:center;
+  background-image: url("../images/origins_background.png");
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -291,18 +298,25 @@ li:nth-of-type(3) > button {
 /* Cat Animatie + Button (Lukte niet zonder !important)*/
 .showCat {
   display: block !important;
-  animation-name: spinning;
-  animation-duration: 4s;
-  animation-timing-function:ease-in, ease-in-out, ease-out;
+  animation: spinning 1s infinite;
 }
 
-/* Opdracht uit de les */
+/* Bron: http://jsfiddle.net/NfX56/3/ */
 @keyframes spinning {
   0% {
-    transform:perspective(2em) rotate3d(1, 1, 0, 0turn);
+    transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
   }
   100% {
-    transform:perspective(2em) rotate3d(1, 1, 0, 10turn);
+    transform: rotateY(-720deg);
+    transform: rotateY(-720deg);
+    transform: rotateY(-720deg);
   }
 }
 
@@ -314,9 +328,9 @@ li:nth-of-type(3) > button {
 /* ASSASINS CREED - ODYSSEY - 2018 */
 /**********************************/
 li:nth-of-type(4) {
-  background-image:url("../images/odyssey_background.png");
-  background-size:cover;
-  background-position:center;
+  background-image: url("../images/odyssey_background.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Octopus */
@@ -329,22 +343,21 @@ li:nth-of-type(4) > img {
   transition: 1s;
 }
 
-/* Button */
+/* Vogel Button */
 li:nth-of-type(4) > button {
   position: absolute;
   height: 2em;
   width: 2em;
   left: 2em;
   top: 10em;
-  background-color: red; /* Maak transparent */
+  background-color: transparent;
   border: none;
 }
 
 /* Octopus Animatie + Button (Lukte niet zonder !important)*/
 .showOctopus {
   display: block !important;
-  animation-name: splash;
-  animation-duration: 5s;
+  animation: splash 5s;
 }
 
 @keyframes splash {
@@ -367,7 +380,6 @@ li:nth-of-type(4) > button {
   100% {
     width: 200%;
   }
-
 }
 
 
@@ -378,35 +390,88 @@ li:nth-of-type(4) > button {
 /* ASSASINS CREED - VALHALLA - 2020 */
 /***********************************/
 li:nth-of-type(5) {
-  background-image:url("../images/valhalla_background.png");
-  background-size:cover;
-  background-position:center;
+  background-image: url("../images/valhalla_background.png");
+  background-size: cover;
+  background-position: center;
 }
 
-/* PepsiMax */
-li:nth-of-type(5) > img {
+/* CocaCola */
+li:nth-of-type(5) > img:first-of-type {
   position: absolute;
   width: 8em;
   right: 11.6em;
   top: 13.6em;
   display: none;
   transition: 1s;
+  animation: explosion 3s forwards;
 }
 
-/* Button */
+/* PepsiMax */
+li:nth-of-type(5) > img:last-of-type {
+  position: absolute;
+  width: 8em;
+  right: 11.6em;
+  top: 0;
+  display: none;
+  transition: 1s;
+  animation: falling 6s forwards;
+}
+
+/* Person Button */
 li:nth-of-type(5) > button {
   position: absolute;
   height: 2em;
   width: 2em;
-  right: 23.2em;
+  right: 17.5em;
   bottom: 8em;
-  background-color: red; /* Maak transparent */
+  background-color: transparent;
   border: none;
 }
 
 /* PepsiMax Animatie + Button (Lukte niet zonder !important)*/
 .showPepsimax {
   display: block !important;
+}
+
+/* Coca Cola Explosion Animation (Easter Egg)*/
+@keyframes explosion {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.4);
+  }
+
+  40% {
+    transform: scale(0.8);
+  }
+
+  60% {
+    transform: scale(1.8);
+  }
+  80% {
+    transform: scale(1);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+
+/* PepsiMax Falling Animation (Easter Egg)*/
+@keyframes falling {
+  0% {
+    top: 0;
+    transform: rotate(360deg);
+  }
+  100% {
+    top: 100vh;
+    transform: rotate(0deg);
+  }
 }
 
 
@@ -418,7 +483,7 @@ li:nth-of-type(5) > button {
 /********************/
 a {
   position: absolute;
-  font-family: 'assasins', sans-serif;
+  font-family: "assasins", sans-serif;
   font-size: 1.56em;
   text-decoration: none;
   color: var(--color-white);
@@ -442,32 +507,32 @@ li > div {
   /* 1 kolom en 1 row */
   /* zowel de h2 en de img staan in die ene grid-cel */
   /* dat staat bij de h2 en img */
-  display:grid;
+  display: grid;
   /* beetje padding in de div */
-  padding:2em;
+  padding: 2em;
 
   /* standaard klein en doorzichtig */
-  scale:0;
+  scale: 0;
   opacity: 0;
 
   /* in .5s van hover terug naar ontzichtbaar */
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 li:hover > div {
   /* normale maat en zichtbaar */
-  scale:1;
-  opacity:1;
+  scale: 1;
+  opacity: 1;
 
   /* in 1s van ontzichtbaar naar zichtbaar */
   transition-duration: 1s;
   /* wel .25s wachten - zodat de li al een beetje kan groeien */
-  transition-delay: .25s;
+  transition-delay: 0.25s;
 }
 
 li > div h2 {
   /* de h2 staat in de eerste cel van het grid */
-  grid-column-start:1;
+  grid-column-start: 1;
   grid-row-start: 1;
 
   /* in het midden aan de onderkant */
@@ -477,19 +542,15 @@ li > div h2 {
 
 li > div img {
   /* de img staat ook in de eerste cel van het grid */
-  grid-column-start:1;
-  grid-row-start:1;
+  grid-column-start: 1;
+  grid-row-start: 1;
   /* in het midden in het midden */
   justify-self: center;
   align-self: center;
   display: block;
   height: 90vh;
-  width:auto;
+  width: auto;
 }
-
-
-
-
 
 /******************************/
 /*Section Styling + Quest View*/
@@ -499,10 +560,10 @@ section {
   /* de secion heeft dezelfde verhouding van de achtergrond-image */
   aspect-ratio: 756/1144;
 
-  padding:4em;
+  padding: 4em;
 
   /* standaard klein en doorzichtig */
-  scale:0;
+  scale: 0;
   opacity: 0;
 
   background-image: url(../images/paper.png);
@@ -510,10 +571,10 @@ section {
   background-position: center;
 
   /* in .5s van hover terug naar ontzichtbaar */
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 
   /* shadow */
-  filter:drop-shadow(.25em .25em .75em var(--color-black));
+  filter: drop-shadow(0.25em 0.25em 0.75em var(--color-black));
 
   /* zodat je over de div blijft hoveren als de section zichtbaar is */
   pointer-events: none;
@@ -522,17 +583,13 @@ section {
 
 li div:hover + section {
   /* normale maat en zichtbaar */
-  scale:1;
-  opacity:1;
+  scale: 1;
+  opacity: 1;
 
   /* in 1s van ontzichtbaar naar zichtbaar */
   transition-duration: 1s;
   /* wel .25s wachten - zodat de li al een beetje kan groeien */
-  transition-delay: .25s;
-}
-
-li section img {
-  /* is nu een background-image van de section */
+  transition-delay: 0.25s;
 }
 
 li section p span {
@@ -545,8 +602,8 @@ li section h3 span {
 }
 
 li section hr {
-  width:1em;
-  height:.1em;
-  border:none;
+  width: 1em;
+  height: 0.1em;
+  border: none;
   background: var(--color-darkred);
 }
