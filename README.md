@@ -163,8 +163,6 @@ Nette code
 
   Na het vele tweaken met positionering en styling merkte ik dat het coderen me alweer wat beter af begon te gaan. Het werken met animaties ging nu vrij soepel in tegenstelling tot vorig jaar. Daarnaast is het stylen van het gehele concept me ook veel beter af gegaan en is het nu veel meer 1 geheel. Door de zelfverzekerdheid die meer omhoog is gekomen gedurende het proces, kon ik veel sneller aanpassingen doen en elementen veranderen op de momenten dat dat nodig was. Een goed voorbeeld van wat goed ging, is dat ik eerst alle animatie properties onder elkaar staan en die heb ik uiteindelijk samengevoegd in de animation property, met de gekozen values erachter aan. Dit werkt veel efficiënter en is voor mij daarom ook erg waardevol.
 
-  Animaties toevoegen en styling
-
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
 
