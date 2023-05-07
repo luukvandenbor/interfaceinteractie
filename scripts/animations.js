@@ -1,10 +1,8 @@
 // JavaScript Document
 console.log("CocaCola?BAH");
 
-// Bron: Tom heeft me geholpen met de laatste links - dus click + toggle
-var blackflagButton = document.querySelector(
-  "main ol li:nth-of-type(1) button"
-);
+// Bron: Tom heeft me geholpen met de laatste links - dus click, toggle en easter egg animatie (cocacola vs pepsi)
+var blackflagButton = document.querySelector("main ol li:nth-of-type(1) button");
 var unityButton = document.querySelector("main ol li:nth-of-type(2) button");
 var originsButton = document.querySelector("main ol li:nth-of-type(3) button");
 var odysseyButton = document.querySelector("main ol li:nth-of-type(4) button");
@@ -15,12 +13,8 @@ var eagle = document.querySelector("main ol li:nth-of-type(2) > img");
 var cat = document.querySelector("main ol li:nth-of-type(3) > img");
 var octopus = document.querySelector("main ol li:nth-of-type(4) > img");
 
-var cocacola = document.querySelector(
-  "main ol li:nth-of-type(5) > img:first-of-type"
-);
-var pepsimax = document.querySelector(
-  "main ol li:nth-of-type(5) > img:last-of-type"
-);
+var cocacola = document.querySelector("main ol li:nth-of-type(5) > img:first-of-type");
+var pepsimax = document.querySelector("main ol li:nth-of-type(5) > img:last-of-type");
 
 // Crocodile Animation (Blackflag)
 blackflagButton.addEventListener("click", () => {

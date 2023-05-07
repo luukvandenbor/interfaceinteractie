@@ -151,7 +151,7 @@ li:nth-of-type(1) > button {
   border: none;
 }
 
-/* Crocodile Animatie + Button (Lukte niet zonder !important)*/
+/* Crocodile Animatie + Button (Lukte me niet zonder !important - Bron: https://www.w3schools.com/css/css_important.asp)*/
 .showCrocodile {
   display: block !important;
   animation: swimming 6s infinite;
@@ -231,7 +231,7 @@ li:nth-of-type(2) > button {
   border: none;
 }
 
-/* Eagle Animatie + Button (Lukte niet zonder !important)*/
+/* Eagle Animatie + Button (Lukte me niet zonder !important)*/
 .showEagle {
   display: block !important;
   animation: fly 5s;
@@ -295,7 +295,7 @@ li:nth-of-type(3) > button {
   border: none;
 }
 
-/* Cat Animatie + Button (Lukte niet zonder !important)*/
+/* Cat Animatie + Button (Lukte me niet zonder !important)*/
 .showCat {
   display: block !important;
   animation: spinning 1s infinite;
@@ -354,7 +354,7 @@ li:nth-of-type(4) > button {
   border: none;
 }
 
-/* Octopus Animatie + Button (Lukte niet zonder !important)*/
+/* Octopus Animatie + Button (Lukte me niet zonder !important)*/
 .showOctopus {
   display: block !important;
   animation: splash 5s;
@@ -428,7 +428,7 @@ li:nth-of-type(5) > button {
   border: none;
 }
 
-/* PepsiMax Animatie + Button (Lukte niet zonder !important)*/
+/* PepsiMax Animatie + Button (Lukte me niet zonder !important)*/
 .showPepsimax {
   display: block !important;
 }

@@ -185,9 +185,10 @@ Nette code
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. Bron voor box shadow: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image
-2. Bron voor transform - translate3d (smoother verloop animatie vogel): https://www.kirupa.com/html5/animating_movement_smoothly_using_css.htm
-3. Bron voor draai animatie kat: http://jsfiddle.net/NfX56/3/
-4. Bron voor de laatste Javascript connecties, dus click + toggle: Tom van den Berg (Student)
-5. Bron voor het witruimte probleem: Sanne 't Hooft
+2. Bron voor !important: https://www.w3schools.com/css/css_important.asp
+3. Bron voor transform - translate3d (smoother verloop animatie vogel): https://www.kirupa.com/html5/animating_movement_smoothly_using_css.htm
+4. Bron voor draai animatie kat: http://jsfiddle.net/NfX56/3/
+5. Bron voor de laatste Javascript connecties, dus click + toggle: Tom van den Berg (Student)
+6. Bron voor het witruimte probleem: Sanne 't Hooft
 
 </details>
